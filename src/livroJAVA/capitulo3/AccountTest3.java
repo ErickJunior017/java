@@ -15,8 +15,8 @@ public class AccountTest3 {
         Account3 account2 = new Account3("Ana Lyvia", -8.78);
 
         //exibe o valor inicial de cada objeto Account
-        System.out.printf("%s balance: R$%.2f %n", account1.getName(), account1.getBalance());
-        System.out.printf("%s balance: R$%.2f %n%n", account2.getName(), account2.getBalance());
+        displayAccount(account1);
+        displayAccount(account2);
 
         //depositando na conta1
         System.out.print("Enter deposit amount for account1: R$");
@@ -26,8 +26,8 @@ public class AccountTest3 {
         account1.deposit(depositAmount);
 
         //exibindo os saldos
-        System.out.printf("%s balance: R$%.2f %n", account1.getName(),account1.getBalance());
-        System.out.printf("%s balance: R$%.2f %n",account2.getName() ,account2.getBalance());
+        displayAccount(account1);
+        displayAccount(account2);
 
         //depositando na conta 2
         System.out.print("%nEnter deposit amount for account2: R$");
@@ -37,7 +37,11 @@ public class AccountTest3 {
         account2.deposit(depositAmount);
 
         //exibindo os saldos
-        System.out.printf("%s balance: R$%.2f %n", account1.getName(),account1.getBalance());
-        System.out.printf("%s balance: R$%.2f %n",account2.getName() ,account2.getBalance());
+        displayAccount(account1);
+        displayAccount(account2);
     }//fim metodo main
-}//fim classe AccountTest
+
+    public static void displayAccount(Account3 accountToDisplay){
+        System.out.printf("%s balance: R$%.2f %n", accountToDisplay.getName(), accountToDisplay.getBalance());
+    }
+}//fim classe AccountTest/
