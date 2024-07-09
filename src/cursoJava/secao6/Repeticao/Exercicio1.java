@@ -1,4 +1,4 @@
-package cursoJava.Repeticao;
+package cursoJava.secao6.Repeticao;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package cursoJava.EstruturasSequenciais;
+package cursoJava.secao6.EstruturasSequenciais;
 
 import java.util.Scanner;
 

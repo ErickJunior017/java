@@ -1,4 +1,4 @@
-package cursoJava.EstruturasSequenciais;
+package cursoJava.secao6.EstruturasSequenciais;
 
 public class FuncoesMat {
     public static void main(String[] args) {
