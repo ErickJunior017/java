@@ -18,16 +18,13 @@ public class Program2 {
         System.out.print("Price: ");
         double price = input.nextDouble();
 
-        System.out.print("Quantity in stock: ");
-        int quantity = input.nextInt();
-
-        Products product = new Products(name, price, quantity);
+        Product product = new Product(name, price);
 
         //Mostrando os dados
         System.out.println("\nProduct data: "+ product);
 
         System.out.printf("%nEnter the number of products to be added from stock: ");
-        quantity = input.nextInt();
+        int quantity = input.nextInt();
         product.addProducts(quantity);
 
         System.out.println("\nUpdate data: "+ product);
