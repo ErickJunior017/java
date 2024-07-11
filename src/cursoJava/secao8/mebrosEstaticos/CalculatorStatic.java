@@ -1,4 +1,4 @@
-package cursoJava.secao8.exercicios.mebrosEstaticos;
+package cursoJava.secao8.mebrosEstaticos;
 
 public class CalculatorStatic {
         public static final double PI = 3.14159;

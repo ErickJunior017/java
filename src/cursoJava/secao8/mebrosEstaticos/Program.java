@@ -1,4 +1,4 @@
-package cursoJava.secao8.exercicios.mebrosEstaticos;
+package cursoJava.secao8.mebrosEstaticos;
 
 import java.util.Locale;
 import java.util.Scanner;
