@@ -5,45 +5,49 @@ public class Product {
     private double price;
     private int quantity;
 
-    public Product(){
-
-    }
-    /**
-     * <h1>Metodos get e set</h1>
-    * <p>Quando você quiser intância um objeto porem não quer implementar todos os valores faça</p>
-    * a sobrecaraga que implementa varios contruturos de classe com parametros diferentes.
-    * */
-    public Product(String name, double price, int quantity){
+    public Product(String name, double price, int quantity) {
         this.name = name;
         this.price = price;
         this.quantity = quantity;
     }
 
-    public Product(String name, double price){
+    public Product(String name, double price) {
         this.name = name;
         this.price = price;
-        quantity = 0;
+        this.quantity = quantity;
     }
 
-    public void setName(String name)
-    {
-        this.name = name;
+    public Product() {
     }
 
-    public String getName(){
+    /**
+     * <h1>Metodos get e set</h1>
+    * <p>Quando você quiser intância um objeto porem não quer implementar todos os valores faça</p>
+    * a sobrecaraga que implementa varios contruturos de classe com parametros diferentes.
+    * */
+
+    public String getName() {
         return name;
     }
 
-    public double getPrice(){
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(double price){
+    public void setPrice(double price) {
         this.price = price;
     }
 
-    public int getQuantity(){
+    public int getQuantity() {
         return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 
     public double totalValueInStock(){
@@ -67,4 +71,5 @@ public class Product {
                 + " units, total: $"
                 + String.format("%.2f", totalValueInStock());
     }
+
 }
