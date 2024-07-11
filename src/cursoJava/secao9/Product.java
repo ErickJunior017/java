@@ -1,16 +1,17 @@
 package cursoJava.secao9;
 
 public class Product {
-    public String name;
-    public double price;
-    public int quantity;
+    private String name;
+    private double price;
+    private int quantity;
 
     public Product(){
 
     }
-    /*
-    * Quando você quiser intância um objeto porem não quer implementar todos os valores faça a
-    * sobrecaraga que implementa varios contruturos de classe com parametros diferentes.
+    /**
+     * <h1>Metodos get e set</h1>
+    * <p>Quando você quiser intância um objeto porem não quer implementar todos os valores faça</p>
+    * a sobrecaraga que implementa varios contruturos de classe com parametros diferentes.
     * */
     public Product(String name, double price, int quantity){
         this.name = name;
@@ -22,6 +23,27 @@ public class Product {
         this.name = name;
         this.price = price;
         quantity = 0;
+    }
+
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public double getPrice(){
+        return price;
+    }
+
+    public void setPrice(double price){
+        this.price = price;
+    }
+
+    public int getQuantity(){
+        return quantity;
     }
 
     public double totalValueInStock(){

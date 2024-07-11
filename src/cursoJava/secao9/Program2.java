@@ -20,6 +20,11 @@ public class Program2 {
 
         Product product = new Product(name, price);
 
+        product.setName("Computador Quantico");
+        System.out.println("Updated name: " + product.getName());
+        product.setPrice(1200.00);
+        System.out.println("Updated price: R$" + product.getPrice());
+
         //Mostrando os dados
         System.out.println("\nProduct data: "+ product);
 
