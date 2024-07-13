@@ -1,4 +1,4 @@
-package cursoJava.secao10;
+package cursoJava.secao10.aulas;
 
 public class Product {
     private String name;
