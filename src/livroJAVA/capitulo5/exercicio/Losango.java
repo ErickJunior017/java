@@ -1,3 +1,5 @@
+package livroJAVA.capitulo5.exercicio;
+
 import java.util.Scanner;
 
 public class Losango {
