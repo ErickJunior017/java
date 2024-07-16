@@ -1,11 +1,11 @@
 package cursoJava.secao10.exercicios;
 
-public class Funcionario {
+public class Funcionario2 {
     private Integer id;
     private String name;
     private Double salary;
 
-    public Funcionario(Integer id, String name, Double salary) {
+    public Funcionario2(Integer id, String name, Double salary) {
         this.id = id;
         this.name = name;
         this.salary = salary;
@@ -42,6 +42,5 @@ public class Funcionario {
 
     public String toString(){
         return id + ", " + name + ", " + String.format("%.2f", salary);
-
     }
 }
