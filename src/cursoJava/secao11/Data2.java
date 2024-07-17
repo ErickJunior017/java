@@ -20,6 +20,8 @@ public class Data2 {
         DateTimeFormatter fmt2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
         DateTimeFormatter fmt3 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm").withZone(ZoneId.systemDefault());
         DateTimeFormatter fmt4 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm").withZone(ZoneId.systemDefault());
+        DateTimeFormatter fmt5 = DateTimeFormatter.ISO_DATE_TIME;
+        DateTimeFormatter fmt6 = DateTimeFormatter.ISO_INSTANT;
 
         String d07Text = fmt4.format(d07);
 
@@ -33,7 +35,11 @@ public class Data2 {
         System.out.println();
         System.out.println("d06 = " + fmt3.format(d06));
         System.out.println();
-        System.out.println(d07Text);
+        System.out.println("d07 = " + d07Text);
+        System.out.println();
+        System.out.println("d05 = "+ d05.format(fmt5));
+        System.out.println("d06 = " + fmt6.format(d06));
+        System.out.println("d06 = " + d06.toString());
     }
 }
 
