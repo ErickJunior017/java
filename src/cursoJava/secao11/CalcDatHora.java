@@ -24,7 +24,6 @@ public class CalcDatHora {
         Instant nextWeekInstant = d06.plus(7, ChronoUnit.DAYS);
         Instant pastWeekInstant = d06.minus(7, ChronoUnit.DAYS);
 
-
         System.out.println("d04 = "+d04);
         System.out.println("Past Week = "+ pastWeekLocalDate);
         System.out.println("Next Week = " + nextWeekLocalDate.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
@@ -38,7 +37,7 @@ public class CalcDatHora {
         System.out.println("Next Week Instant = "+nextWeekInstant);
         System.out.println("past Week Instant = "+pastWeekInstant);
 
-        Duration t1 = Duration.between(pastWeekLocalDate.atStartOfDay(), d04.atStartOfDay());
+        Duration t1 = Duration.between(pastWeekLocalDate.atTime(0, 0), d04.atStartOfDay());
         Duration t2 = Duration.between(pastWeekLocalDateTime, d05);
         Duration t3 = Duration.between(pastWeekInstant, d06);
         Duration t4 = Duration.between(d06, pastWeekInstant);
