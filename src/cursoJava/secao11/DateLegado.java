@@ -29,6 +29,7 @@ public class DateLegado {
 
         SimpleDateFormat y8 = new SimpleDateFormat("dd/MM/yyyy HH:mm");
         Date agora = y8.parse("18/07/2024 23:35");
+
         System.out.println("agora = " + agora);
         System.out.println("x1: " + x1);
         System.out.println("x2: " + x2);
