@@ -1,4 +1,4 @@
-package cursoJava.secao14;
+package cursoJava.secao14.entities;
 
 public class Account {
     private Integer number;
