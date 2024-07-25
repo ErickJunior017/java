@@ -15,7 +15,7 @@ public class Order2 {
 
     private List<OrderItem> item = new ArrayList<>();
 
-    SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+    private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 
     public Order2() {
     }

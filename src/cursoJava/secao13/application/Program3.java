@@ -16,6 +16,7 @@ public class Program3 {
     public static void main(String[] args) throws ParseException {
         Locale.setDefault(Locale.US);
         Scanner input = new Scanner(System.in);
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
         System.out.println("Enter cliente data:");
         System.out.print("Name: ");
@@ -24,7 +25,7 @@ public class Program3 {
         String email = input.nextLine();
         System.out.print("Birth date (DD/MM/YYYY): ");
         String dateString = input.nextLine();
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+
         Date date = sdf.parse(dateString);
         Cliente client = new Cliente(name, email, date);
         System.out.println();
