@@ -27,7 +27,7 @@ public class SavingsAccount extends Account{
     //@Override é responsavel por indica ao compilador que o metodo abaixo é sobrescrito.
     // É uma boa pratica de programação
     @Override
-    public void  withDraw(Double amount){
+    public final  void  withDraw(Double amount){
         balance -= amount;
     }
 }

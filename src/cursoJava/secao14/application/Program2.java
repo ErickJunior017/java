@@ -1,4 +1,4 @@
-package cursoJava.secao14.entities.application;
+package cursoJava.secao14.application;
 
 import cursoJava.secao14.entities.Account;
 import cursoJava.secao14.entities.BusinessAccount;
