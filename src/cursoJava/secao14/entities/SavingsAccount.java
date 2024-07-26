@@ -23,4 +23,11 @@ public class SavingsAccount extends Account{
     public void updateBalance(){
         balance += balance * interestRate;
     }
+
+    //@Override é responsavel por indica ao compilador que o metodo abaixo é sobrescrito.
+    // É uma boa pratica de programação
+    @Override
+    public void  withDraw(Double amount){
+        balance -= amount;
+    }
 }

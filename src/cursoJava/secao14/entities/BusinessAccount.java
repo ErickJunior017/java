@@ -27,10 +27,8 @@ public class BusinessAccount extends Account {
     }
 
     @Override
-    public String toString() {
-        return "BusinessAccount{" +
-                "loanLimit=" + loanLimit +
-                ", balance=" + balance +
-                '}';
+    public void  withDraw(Double amount){
+        super.withDraw(amount);
+        balance -= 2.0;
     }
 }
