@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Program2 {
     public static void main(String[] args) {
-        File file = new File("C:\\Temp\\in.txt");
+        File file = new File("C:\\Program Files\\Git\\LICENSE.txt");
         Scanner input = null;
         try{
             input = new Scanner(file);
