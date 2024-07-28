@@ -19,9 +19,18 @@ public class Program {
         System.out.println("***METHOD2 START***");
         Scanner input = new Scanner(System.in);
 
-        String[] vect = input.nextLine().split(" ");
-        int position = input.nextInt();
-        System.out.println(vect[position]);
+        try{
+            String[] vect = input.nextLine().split(" ");
+            int position = input.nextInt();
+            System.out.println(vect[position]);
+        }catch(ArrayIndexOutOfBoundsException e){
+            System.out.println("Invalid position!");
+            e.printStackTrace();
+            input.next();
+        }catch(InputMismatchException e){
+            System.out.println("Input error!");
+            input.next();
+        }
 
         System.out.println("***METHOD2 END***");
 
