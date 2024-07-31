@@ -10,7 +10,7 @@ public class AccountBank {
     }
 
     public AccountBank(int numberAccount, String name) {
-        this.numberAccount = numberAccount;
+        setNumberAccount(numberAccount);
         this.name = name;
     }
 
