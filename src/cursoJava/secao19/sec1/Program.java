@@ -1,4 +1,4 @@
-package cursoJava.secao19;
+package cursoJava.secao19.sec1;
 
 
 import java.util.Scanner;
