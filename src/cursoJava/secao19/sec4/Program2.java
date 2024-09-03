@@ -1,20 +1,33 @@
 package cursoJava.secao19.sec4;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Program2 {
     public static void main(String[] args) {
 
-        List<Object> myOjs = new ArrayList<>();
-        myOjs.add("Maria");
-        myOjs.add("Alex");
+         List<Integer> myInts = Arrays.asList(1, 2, 3, 4);
+         List<Double> myDoubles = Arrays.asList(3.14, 6.28);
+         List<Object> myObjs = new ArrayList<Object>();
 
-        List<? super Number>  myNums = myOjs;
+         copy(myInts, myObjs);
+         printList(myObjs);
 
-        myNums.add(10);
-        myNums.add(3.14);
+         copy(myDoubles, myObjs);
+         printList(myObjs);
+    }
 
-        Number x = myNums.get(0); //erro de compilação/
+    public static void copy(List<? extends Number> source, List<? super Number> target){
+        for (Number number : source){
+            target.add(number);
+        }
+    }
+
+    public static void printList(List<?> list){
+        for (Object obj : list){
+            System.out.print(obj + " ");
+        }
+        System.out.println();
     }
 }
